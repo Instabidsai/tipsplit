@@ -218,7 +218,7 @@ function HomePage() {
             </div>
 
             {/* Links */}
-            <div className="grid grid-cols-2 gap-8 text-sm">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm">
               <div>
                 <p className="font-semibold text-surface-200 mb-3 uppercase tracking-wider text-xs">
                   Product
@@ -235,6 +235,28 @@ function HomePage() {
                   <li>
                     <a href="#features" className="hover:text-white transition-colors">
                       Features
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-semibold text-surface-200 mb-3 uppercase tracking-wider text-xs">
+                  Support
+                </p>
+                <ul className="space-y-2">
+                  <li>
+                    <a href="https://github.com/Instabidsai/tipsplit/issues" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                      Report a Bug
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Instabidsai/tipsplit/discussions" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                      Ask a Question
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:support@tipsplit.app" className="hover:text-white transition-colors">
+                      Email Support
                     </a>
                   </li>
                 </ul>

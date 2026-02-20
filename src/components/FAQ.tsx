@@ -21,6 +21,18 @@ const faqs = [
     q: "Do you collect my data?",
     a: "No. TipSplit runs 100% in your browser. Your bill amounts, tips, and splits never leave your phone. We don't use analytics, cookies, or tracking scripts. There's no account, no login, and no database.",
   },
+  {
+    q: "How do I get help or report a bug?",
+    a: "You can report bugs or request features on our GitHub Issues page at github.com/Instabidsai/tipsplit/issues. For general questions, visit our GitHub Discussions. You can also email us at support@tipsplit.app.",
+  },
+  {
+    q: "Can I use TipSplit for large group dinners?",
+    a: "Absolutely. TipSplit supports splitting bills between 1 and 99 people. It handles rounding automatically and tells you if someone needs to pay an extra penny to cover rounding differences.",
+  },
+  {
+    q: "Can I enter a custom tip percentage?",
+    a: "Yes. Tap the 'Custom' button in the tip selector to enter any percentage between 0% and 100%. The results update instantly as you type.",
+  },
 ];
 
 export default function FAQ() {
