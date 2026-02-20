@@ -2,7 +2,7 @@ import Stripe from "stripe";
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2025-12-18.acacia",
+  apiVersion: "2026-01-28.clover",
 });
 
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET!;
@@ -14,10 +14,10 @@ export const config = {
   },
 };
 
-async function getRawBody(req: VercelRequest): Promise<Buffer> {
+async function getRawBody(req: VercelRequest): Promise<Uint8Array> {
   return new Promise((resolve, reject) => {
-    const chunks: Buffer[] = [];
-    req.on("data", (chunk: Buffer) => chunks.push(chunk));
+    const chunks: Uint8Array[] = [];
+    req.on("data", (chunk: Uint8Array) => chunks.push(chunk));
     req.on("end", () => resolve(Buffer.concat(chunks)));
     req.on("error", reject);
   });
