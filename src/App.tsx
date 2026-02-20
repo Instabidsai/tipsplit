@@ -88,19 +88,18 @@ function HomePage() {
       </nav>
 
       <main>
-      {/* Hero / Above the Fold */}
-      <section className="pt-16 pb-12 px-4 text-center bg-gradient-to-b from-brand-50 to-surface-50">
+      {/* Hero / Above the Fold — compact on mobile so calculator peeks above fold */}
+      <section className="pt-10 pb-6 md:pt-16 md:pb-12 px-4 text-center bg-gradient-to-b from-brand-50 to-surface-50">
         <div className="max-w-2xl mx-auto">
-          <span className="inline-block px-3 py-1 mb-6 text-xs font-semibold uppercase tracking-wider text-brand-700 bg-brand-100 rounded-full">
+          <span className="inline-block px-3 py-1 mb-4 md:mb-6 text-xs font-semibold uppercase tracking-wider text-brand-700 bg-brand-100 rounded-full">
             100% Free — No Ads, Ever
           </span>
-          <h1 className="text-display-lg text-surface-900 mb-4">
+          <h1 className="text-display-md md:text-display-lg text-surface-900 mb-3 md:mb-4">
             Tip and split your bill in seconds.
           </h1>
-          <p className="text-lg text-surface-500 leading-relaxed mb-8 max-w-xl mx-auto">
-            The modern tip calculator. Type your bill, pick a tip, set the split
-            — see what everyone owes instantly. No app to download. No ads to
-            close. Works on any phone.
+          <p className="text-base md:text-lg text-surface-500 leading-relaxed mb-6 md:mb-8 max-w-xl mx-auto">
+            Type your bill, pick a tip, set the split — see what everyone owes
+            instantly. Works on any phone.
           </p>
           <button
             onClick={scrollToCalc}
