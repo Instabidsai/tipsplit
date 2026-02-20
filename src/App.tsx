@@ -283,7 +283,7 @@ function HomePage() {
 
           <div className="border-t border-surface-800 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs text-surface-300">
             <p>&copy; 2026 TipSplit. Made with coffee and math.</p>
-            <p>No ads. No tracking. No data collected.</p>
+            <p>No ads. No cookies. Privacy-first analytics.</p>
           </div>
         </div>
       </footer>
