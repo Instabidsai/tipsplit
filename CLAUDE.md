@@ -22,9 +22,24 @@ Keep it simple. Ship it fast. Make it look professional.
 
 ## Project Files
 - `brand-preview.html`
+- `index.html`
+- `package-lock.json`
+- `package.json`
+- `postcss.config.js`
+- `src\App.tsx`
 - `src\brand\tokens.ts`
+- `src\components\BillInput.tsx`
+- `src\components\ResultsDisplay.tsx`
+- `src\components\SplitSelector.tsx`
+- `src\components\TipSelector.tsx`
 - `src\index.css`
+- `src\main.tsx`
+- `src\vite-env.d.ts`
 - `tailwind.config.ts`
+- `tsconfig.app.json`
+- `tsconfig.json`
+- `tsconfig.node.json`
+- `vite.config.ts`
 
 ## Completed Crew Summaries
 
@@ -70,3 +85,24 @@ PREV_CREW_VERIFICATION: PASS
 PREV_CREW_ISSUES: None
 STATUS: COMPLETE
 FILES_CREATED: [C:\Users\Not John Or Justin\Playbooks\projects\tip-crew-001\repo\tailwind.config.ts, C:\Users\Not John Or Justin\Playbooks\projects\tip-crew-001\repo\src\brand\tokens.ts, C:\Users\Not John Or Justin\Playbooks\projects\tip-crew-001\repo\src\index.css, C:\Users\Not John Or Justin\Playbooks\projects\tip-crew-001\repo\brand-preview.html, C:\Users\Not John Or Justin\Playbooks\p
+
+### Crew 4: Content Library
+CREW: 4
+NAME: content
+ARTIFACT_TYPE: DOCUMENT
+PREV_CREW_VERIFICATION: PASS
+PREV_CREW_ISSUES: None
+STATUS: COMPLETE
+FILES_CREATED: [C:\Users\Not John Or Justin\Playbooks\projects\tip-crew-001\repo\CONTENT-LIBRARY.md]
+FILES_MODIFIED: []
+URLS_DEPLOYED: NONE
+EVIDENCE: CONTENT-LIBRARY.md created and verified at 426 lines. Contains: Crew 3 verification (PASS), core messaging framework with hero headline + subheadline + 3 value propositions, full landing page copy across 7 sections (above-the-fold, how
+
+### Crew 5: Deployed scaffold + DB
+CREW: 5
+NAME: architecture
+ARTIFACT_TYPE: DEPLOYMENT
+PREV_CREW_VERIFICATION: PASS
+PREV_CREW_ISSUES: None. CONTENT-LIBRARY.md contains 426 lines of specific, actionable content with 10 sourced statistics (all labeled VERIFIED/ASSUMPTION), SEO metadata with JSON-LD schema, and a content-to-component mapping table. All copy aligns with founder brief.
+STATUS: COMPLETE
+FILES_CREATED: [C:\Users\Not John Or Justin\Playbooks\projects\tip-crew-001\repo\package.json, C:\Users\Not John Or Justin\Playbooks\

@@ -54,6 +54,7 @@ export default function TipSelector({
             type="text"
             inputMode="numeric"
             placeholder="Custom"
+            aria-label="Custom tip percentage"
             value={isCustomActive ? customValue : ""}
             onChange={handleCustomChange}
             onFocus={handleCustomFocus}

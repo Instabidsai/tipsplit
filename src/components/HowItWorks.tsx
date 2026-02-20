@@ -87,7 +87,7 @@ export default function HowItWorks() {
             </div>
           ))}
         </div>
-        <p className="mt-10 text-sm text-surface-400 italic">
+        <p className="mt-10 text-sm text-surface-500 italic">
           The average tip at full-service U.S. restaurants is{" "}
           <span className="font-mono font-medium text-surface-600">19.4%</span>{" "}
           as of 2025.

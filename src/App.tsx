@@ -79,13 +79,14 @@ function HomePage() {
           </div>
           <button
             onClick={scrollToCalc}
-            className="text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors"
+            className="text-sm font-semibold text-brand-700 hover:text-brand-800 transition-colors"
           >
             Calculate Now
           </button>
         </div>
       </nav>
 
+      <main>
       {/* Hero / Above the Fold */}
       <section className="pt-16 pb-12 px-4 text-center bg-gradient-to-b from-brand-50 to-surface-50">
         <div className="max-w-2xl mx-auto">
@@ -102,7 +103,7 @@ function HomePage() {
           </p>
           <button
             onClick={scrollToCalc}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-500 text-white font-semibold rounded-2xl shadow-md hover:bg-brand-600 active:scale-95 transition-all duration-150 text-base min-h-touch"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-700 text-white font-semibold rounded-2xl shadow-md hover:bg-brand-800 active:scale-95 transition-all duration-150 text-base min-h-touch"
           >
             Start Calculating
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -151,17 +152,17 @@ function HomePage() {
       <FAQ />
 
       {/* CTA Banner */}
-      <section className="py-16 px-4 bg-brand-500">
+      <section className="py-16 px-4 bg-brand-700">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-display-sm text-white mb-4">
             Ready to split the bill?
           </h2>
-          <p className="text-brand-100 mb-8">
+          <p className="text-white mb-8">
             No sign-up required. Just scroll up and start calculating.
           </p>
           <button
             onClick={scrollToCalc}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-brand-600 font-semibold rounded-2xl shadow-md hover:bg-brand-50 active:scale-95 transition-all duration-150 text-base min-h-touch"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-brand-700 font-semibold rounded-2xl shadow-md hover:bg-brand-50 active:scale-95 transition-all duration-150 text-base min-h-touch"
           >
             Start Calculating
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -176,6 +177,8 @@ function HomePage() {
           </button>
         </div>
       </section>
+
+      </main>
 
       {/* Footer */}
       <footer className="py-12 px-4 bg-surface-900 text-surface-400">
@@ -217,9 +220,9 @@ function HomePage() {
             {/* Links */}
             <div className="grid grid-cols-2 gap-8 text-sm">
               <div>
-                <h4 className="font-semibold text-surface-200 mb-3 uppercase tracking-wider text-xs">
+                <p className="font-semibold text-surface-200 mb-3 uppercase tracking-wider text-xs">
                   Product
-                </h4>
+                </p>
                 <ul className="space-y-2">
                   <li>
                     <button
@@ -237,9 +240,9 @@ function HomePage() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-surface-200 mb-3 uppercase tracking-wider text-xs">
+                <p className="font-semibold text-surface-200 mb-3 uppercase tracking-wider text-xs">
                   Legal
-                </h4>
+                </p>
                 <ul className="space-y-2">
                   <li>
                     <a href="/terms" className="hover:text-white transition-colors">
@@ -256,7 +259,7 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="border-t border-surface-800 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs text-surface-500">
+          <div className="border-t border-surface-800 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs text-surface-300">
             <p>&copy; 2026 TipSplit. Made with coffee and math.</p>
             <p>No ads. No tracking. No data collected.</p>
           </div>

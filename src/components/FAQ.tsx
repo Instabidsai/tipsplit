@@ -51,7 +51,7 @@ export default function FAQ() {
                   height="20"
                   viewBox="0 0 20 20"
                   fill="none"
-                  className={`shrink-0 text-surface-400 transition-transform duration-200 ${
+                  className={`shrink-0 text-surface-500 transition-transform duration-200 ${
                     open === i ? "rotate-180" : ""
                   }`}
                 >

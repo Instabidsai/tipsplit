@@ -42,13 +42,13 @@ export default function Comparison() {
                 <th className="text-left p-4 font-medium text-surface-500 uppercase tracking-wider text-xs">
                   Feature
                 </th>
-                <th className="text-center p-4 font-medium text-surface-400 text-xs uppercase tracking-wider">
+                <th className="text-center p-4 font-medium text-surface-500 text-xs uppercase tracking-wider">
                   Calculator.net
                 </th>
-                <th className="text-center p-4 font-medium text-surface-400 text-xs uppercase tracking-wider">
+                <th className="text-center p-4 font-medium text-surface-500 text-xs uppercase tracking-wider">
                   CalculatorSoup
                 </th>
-                <th className="text-center p-4 font-semibold text-brand-600 text-xs uppercase tracking-wider">
+                <th className="text-center p-4 font-semibold text-brand-700 text-xs uppercase tracking-wider">
                   TipSplit
                 </th>
               </tr>
@@ -64,13 +64,13 @@ export default function Comparison() {
                   <td className="p-4 font-medium text-surface-800">
                     {row.feature}
                   </td>
-                  <td className="p-4 text-center text-surface-400">
+                  <td className="p-4 text-center text-surface-500">
                     {row.calc}
                   </td>
-                  <td className="p-4 text-center text-surface-400">
+                  <td className="p-4 text-center text-surface-500">
                     {row.soup}
                   </td>
-                  <td className="p-4 text-center font-semibold text-brand-600">
+                  <td className="p-4 text-center font-semibold text-brand-700">
                     {row.tip}
                   </td>
                 </tr>

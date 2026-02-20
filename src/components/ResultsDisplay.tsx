@@ -52,7 +52,7 @@ export default function ResultsDisplay({
       </div>
 
       <div className="border-t border-brand-200 pt-4">
-        <p className="text-xs font-medium uppercase tracking-wider text-brand-600">
+        <p className="text-xs font-medium uppercase tracking-wider text-brand-700">
           Per Person
         </p>
         <p className="font-mono text-amount-lg text-brand-700">
@@ -61,7 +61,7 @@ export default function ResultsDisplay({
       </div>
 
       {hasValidBill && remainder > 0 && (
-        <p className="text-xs text-surface-400 italic">
+        <p className="text-xs text-surface-500 italic">
           One person pays an extra {formatCurrency(Math.abs(remainder))} to
           cover rounding.
         </p>

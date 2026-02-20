@@ -21,7 +21,7 @@ export default function BillInput({ value, onChange }: BillInputProps) {
         Bill Amount
       </label>
       <div className="relative">
-        <span className="absolute left-4 top-1/2 -translate-y-1/2 text-lg font-semibold text-surface-400">
+        <span className="absolute left-4 top-1/2 -translate-y-1/2 text-lg font-semibold text-surface-500">
           $
         </span>
         <input

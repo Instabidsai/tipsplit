@@ -43,7 +43,7 @@ export default function SuccessBanner() {
   return (
     <div className="fixed top-14 inset-x-0 z-40 animate-slide-down">
       <div className="max-w-xl mx-auto px-4 py-3">
-        <div className="bg-brand-500 text-white rounded-2xl shadow-lg px-5 py-4 flex items-start gap-3">
+        <div className="bg-brand-700 text-white rounded-2xl shadow-lg px-5 py-4 flex items-start gap-3">
           <svg className="w-6 h-6 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24">
             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>

@@ -10,7 +10,7 @@ export default function TermsOfService() {
             </svg>
             <span className="text-lg font-semibold text-surface-900">TipSplit</span>
           </a>
-          <a href="/" className="text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors">
+          <a href="/" className="text-sm font-medium text-brand-700 hover:text-brand-700 transition-colors">
             Back to Calculator
           </a>
         </div>
@@ -18,7 +18,7 @@ export default function TermsOfService() {
 
       <main className="max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-display-md text-surface-900 mb-2">Terms of Service</h1>
-        <p className="text-sm text-surface-400 mb-8">Last updated: February 19, 2026</p>
+        <p className="text-sm text-surface-500 mb-8">Last updated: February 19, 2026</p>
 
         <div className="prose prose-surface max-w-none space-y-6 text-surface-700 text-base leading-relaxed">
           <section>
@@ -80,7 +80,7 @@ export default function TermsOfService() {
             <p>
               TipSplit Pro subscriptions are processed by Stripe, Inc. Your use of Stripe's
               payment services is governed by{" "}
-              <a href="https://stripe.com/legal" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">
+              <a href="https://stripe.com/legal" target="_blank" rel="noopener noreferrer" className="text-brand-700 hover:underline">
                 Stripe's Terms of Service
               </a>. TipSplit does not store your payment information.
             </p>
@@ -99,7 +99,7 @@ export default function TermsOfService() {
             <h2 className="text-xl font-semibold text-surface-900 mb-3">9. Contact</h2>
             <p>
               For questions about these Terms, please visit our{" "}
-              <a href="https://github.com/Instabidsai/tipsplit" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">
+              <a href="https://github.com/Instabidsai/tipsplit" target="_blank" rel="noopener noreferrer" className="text-brand-700 hover:underline">
                 GitHub repository
               </a>.
             </p>

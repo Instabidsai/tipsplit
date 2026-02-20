@@ -54,7 +54,7 @@ export default function Pricing({ onScrollToCalc }: PricingProps) {
             </div>
             <div className="flex items-baseline gap-1 mb-6">
               <span className="text-4xl font-bold font-mono text-surface-900">$0</span>
-              <span className="text-surface-400 text-sm">/forever</span>
+              <span className="text-surface-500 text-sm">/forever</span>
             </div>
             <ul className="space-y-3 mb-8 text-sm text-surface-600">
               <li className="flex items-start gap-2">
@@ -97,9 +97,9 @@ export default function Pricing({ onScrollToCalc }: PricingProps) {
           </div>
 
           {/* Pro Tier */}
-          <div className="card border-2 border-brand-500 relative">
+          <div className="card border-2 border-brand-700 relative">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <span className="px-3 py-1 bg-brand-500 text-white text-xs font-semibold rounded-full uppercase tracking-wider">
+              <span className="px-3 py-1 bg-brand-700 text-white text-xs font-semibold rounded-full uppercase tracking-wider">
                 Pro
               </span>
             </div>
@@ -109,7 +109,7 @@ export default function Pricing({ onScrollToCalc }: PricingProps) {
             </div>
             <div className="flex items-baseline gap-1 mb-6">
               <span className="text-4xl font-bold font-mono text-surface-900">$1.99</span>
-              <span className="text-surface-400 text-sm">/month</span>
+              <span className="text-surface-500 text-sm">/month</span>
             </div>
             <ul className="space-y-3 mb-8 text-sm text-surface-600">
               <li className="flex items-start gap-2">
@@ -146,7 +146,7 @@ export default function Pricing({ onScrollToCalc }: PricingProps) {
             <button
               onClick={handleCheckout}
               disabled={loading}
-              className="w-full py-3 px-4 bg-brand-500 text-white font-semibold rounded-xl hover:bg-brand-600 active:scale-[0.98] transition-all duration-150 min-h-touch disabled:opacity-60 disabled:cursor-not-allowed"
+              className="w-full py-3 px-4 bg-brand-700 text-white font-semibold rounded-xl hover:bg-brand-800 active:scale-[0.98] transition-all duration-150 min-h-touch disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <span className="flex items-center justify-center gap-2">
@@ -160,7 +160,7 @@ export default function Pricing({ onScrollToCalc }: PricingProps) {
                 "Upgrade to Pro"
               )}
             </button>
-            <p className="text-center text-xs text-surface-400 mt-3">
+            <p className="text-center text-xs text-surface-500 mt-3">
               Cancel anytime. Powered by Stripe.
             </p>
           </div>

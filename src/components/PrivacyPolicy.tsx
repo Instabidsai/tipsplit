@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
             </svg>
             <span className="text-lg font-semibold text-surface-900">TipSplit</span>
           </a>
-          <a href="/" className="text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors">
+          <a href="/" className="text-sm font-medium text-brand-700 hover:text-brand-700 transition-colors">
             Back to Calculator
           </a>
         </div>
@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
 
       <main className="max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-display-md text-surface-900 mb-2">Privacy Policy</h1>
-        <p className="text-sm text-surface-400 mb-8">Last updated: February 19, 2026</p>
+        <p className="text-sm text-surface-500 mb-8">Last updated: February 19, 2026</p>
 
         <div className="prose prose-surface max-w-none space-y-6 text-surface-700 text-base leading-relaxed">
           <section className="card-result">
@@ -62,14 +62,14 @@ export default function PrivacyPolicy() {
               <li>
                 <strong>Vercel</strong> — Hosts the website. Vercel may collect standard server access
                 logs (IP address, request URL, timestamp) as part of normal web hosting. See{" "}
-                <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">
+                <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-brand-700 hover:underline">
                   Vercel's Privacy Policy
                 </a>.
               </li>
               <li>
                 <strong>Google Fonts</strong> — Serves the Inter and DM Mono typefaces. Google may
                 collect limited data when fonts are loaded. See{" "}
-                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-700 hover:underline">
                   Google's Privacy Policy
                 </a>.
               </li>
@@ -77,7 +77,7 @@ export default function PrivacyPolicy() {
                 <strong>Stripe</strong> — If you subscribe to TipSplit Pro, Stripe processes your
                 payment. Payment data is handled entirely by Stripe and is never stored on our
                 servers. See{" "}
-                <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">
+                <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-700 hover:underline">
                   Stripe's Privacy Policy
                 </a>.
               </li>
@@ -107,7 +107,7 @@ export default function PrivacyPolicy() {
               correct, and delete your personal data. Since TipSplit collects no personal data,
               there is nothing to access, correct, or delete. You are welcome to verify this by
               inspecting the source code on our{" "}
-              <a href="https://github.com/Instabidsai/tipsplit" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">
+              <a href="https://github.com/Instabidsai/tipsplit" target="_blank" rel="noopener noreferrer" className="text-brand-700 hover:underline">
                 GitHub repository
               </a>.
             </p>
@@ -125,7 +125,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-xl font-semibold text-surface-900 mb-3">8. Contact</h2>
             <p>
               For questions about this Privacy Policy, please visit our{" "}
-              <a href="https://github.com/Instabidsai/tipsplit" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">
+              <a href="https://github.com/Instabidsai/tipsplit" target="_blank" rel="noopener noreferrer" className="text-brand-700 hover:underline">
                 GitHub repository
               </a>.
             </p>
