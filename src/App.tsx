@@ -7,6 +7,8 @@ import HowItWorks from "./components/HowItWorks";
 import Features from "./components/Features";
 import Comparison from "./components/Comparison";
 import FAQ from "./components/FAQ";
+import Pricing from "./components/Pricing";
+import SuccessBanner from "./components/SuccessBanner";
 
 export default function App() {
   const [billRaw, setBillRaw] = useState("");
@@ -42,6 +44,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-surface-50 flex flex-col">
+      <SuccessBanner />
+
       {/* ─── Navigation ─────────────────────────────────────── */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-surface-100">
         <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
@@ -146,33 +150,7 @@ export default function App() {
       <Comparison />
 
       {/* ─── Pricing ────────────────────────────────────────── */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-display-md text-surface-900 mb-4">
-            Free. Forever. Seriously.
-          </h2>
-          <p className="text-surface-500 leading-relaxed mb-6">
-            TipSplit is a free tool. No premium tier. No "Pro" version. No
-            credit card required. No catch.
-          </p>
-          <p className="text-surface-500 leading-relaxed mb-8">
-            We built this because every existing tip calculator is buried in ads
-            or locked behind an app download. You deserve better math at dinner.
-          </p>
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-brand-50 text-brand-700 rounded-2xl text-sm font-medium">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path
-                d="M16.667 5L7.5 14.167 3.333 10"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <span className="font-mono">$0</span> — always
-          </div>
-        </div>
-      </section>
+      <Pricing onScrollToCalc={scrollToCalc} />
 
       {/* ─── FAQ ────────────────────────────────────────────── */}
       <FAQ />

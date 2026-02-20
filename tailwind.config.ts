@@ -107,6 +107,7 @@ const config: Config = {
       animation: {
         "fade-in": "fadeIn 0.2s ease-out",
         "slide-up": "slideUp 0.3s ease-out",
+        "slide-down": "slideDown 0.3s ease-out",
         "scale-in": "scaleIn 0.15s ease-out",
       },
       keyframes: {
@@ -116,6 +117,10 @@ const config: Config = {
         },
         slideUp: {
           "0%": { opacity: "0", transform: "translateY(8px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        slideDown: {
+          "0%": { opacity: "0", transform: "translateY(-12px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         scaleIn: {
