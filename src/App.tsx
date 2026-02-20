@@ -9,8 +9,10 @@ import Comparison from "./components/Comparison";
 import FAQ from "./components/FAQ";
 import Pricing from "./components/Pricing";
 import SuccessBanner from "./components/SuccessBanner";
+import TermsOfService from "./components/TermsOfService";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
-export default function App() {
+function HomePage() {
   const [billRaw, setBillRaw] = useState("");
   const [tipPercent, setTipPercent] = useState(18);
   const [customTip, setCustomTip] = useState("");
@@ -46,7 +48,7 @@ export default function App() {
     <div className="min-h-screen bg-surface-50 flex flex-col">
       <SuccessBanner />
 
-      {/* ─── Navigation ─────────────────────────────────────── */}
+      {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-surface-100">
         <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -83,7 +85,7 @@ export default function App() {
         </div>
       </nav>
 
-      {/* ─── Hero / Above the Fold ──────────────────────────── */}
+      {/* Hero / Above the Fold */}
       <section className="pt-16 pb-12 px-4 text-center bg-gradient-to-b from-brand-50 to-surface-50">
         <div className="max-w-2xl mx-auto">
           <span className="inline-block px-3 py-1 mb-6 text-xs font-semibold uppercase tracking-wider text-brand-700 bg-brand-100 rounded-full">
@@ -115,7 +117,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ─── Calculator ─────────────────────────────────────── */}
+      {/* Calculator */}
       <section
         ref={calcRef}
         id="calculator"
@@ -140,22 +142,14 @@ export default function App() {
         </div>
       </section>
 
-      {/* ─── How It Works ───────────────────────────────────── */}
+      {/* Content Sections */}
       <HowItWorks />
-
-      {/* ─── Features ───────────────────────────────────────── */}
       <Features />
-
-      {/* ─── Comparison ─────────────────────────────────────── */}
       <Comparison />
-
-      {/* ─── Pricing ────────────────────────────────────────── */}
       <Pricing onScrollToCalc={scrollToCalc} />
-
-      {/* ─── FAQ ────────────────────────────────────────────── */}
       <FAQ />
 
-      {/* ─── CTA Banner ─────────────────────────────────────── */}
+      {/* CTA Banner */}
       <section className="py-16 px-4 bg-brand-500">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-display-sm text-white mb-4">
@@ -182,7 +176,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ─── Footer ─────────────────────────────────────────── */}
+      {/* Footer */}
       <footer className="py-12 px-4 bg-surface-900 text-surface-400">
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-10">
@@ -247,12 +241,14 @@ export default function App() {
                 </h4>
                 <ul className="space-y-2">
                   <li>
-                    <span className="text-surface-500">
-                      No data collected
-                    </span>
+                    <a href="/terms" className="hover:text-white transition-colors">
+                      Terms of Service
+                    </a>
                   </li>
                   <li>
-                    <span className="text-surface-500">No cookies used</span>
+                    <a href="/privacy" className="hover:text-white transition-colors">
+                      Privacy Policy
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -267,4 +263,13 @@ export default function App() {
       </footer>
     </div>
   );
+}
+
+export default function App() {
+  const path = window.location.pathname;
+
+  if (path === "/terms") return <TermsOfService />;
+  if (path === "/privacy") return <PrivacyPolicy />;
+
+  return <HomePage />;
 }
