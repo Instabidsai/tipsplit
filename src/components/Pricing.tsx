@@ -1,5 +1,10 @@
 import { useState } from "react";
 
+// Stripe Payment Link — created via Stripe API
+// Product: TipSplit Pro (prod_U0mAbMAusXKoxO)
+// Price: $1.99/month (price_1T2kcaGddWenMvG0JSjgAxtq) — per Formula Registry F-12
+const PAYMENT_LINK = "https://buy.stripe.com/6oU8wP2Kjdmw91JgxwenS00";
+
 interface PricingProps {
   onScrollToCalc: () => void;
 }
@@ -10,6 +15,7 @@ export default function Pricing({ onScrollToCalc }: PricingProps) {
   async function handleCheckout() {
     setLoading(true);
     try {
+      // Try the serverless checkout session first (supports success redirect)
       const res = await fetch("/api/create-checkout-session", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -17,14 +23,13 @@ export default function Pricing({ onScrollToCalc }: PricingProps) {
       const data = await res.json();
       if (data.url) {
         window.location.href = data.url;
-      } else {
-        console.error("No checkout URL returned:", data.error);
-        setLoading(false);
+        return;
       }
-    } catch (err) {
-      console.error("Checkout error:", err);
-      setLoading(false);
+    } catch {
+      // Serverless function not available — fall back to Payment Link
     }
+    // Fallback: direct Stripe Payment Link (always works, no backend needed)
+    window.location.href = PAYMENT_LINK;
   }
 
   return (
