@@ -14,7 +14,7 @@ export const config = {
   },
 };
 
-async function getRawBody(req: VercelRequest): Promise<Uint8Array> {
+async function getRawBody(req: VercelRequest): Promise<Buffer> {
   return new Promise((resolve, reject) => {
     const chunks: Uint8Array[] = [];
     req.on("data", (chunk: Uint8Array) => chunks.push(chunk));
