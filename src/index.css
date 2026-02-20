@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-surface-50 text-surface-800;
+  }
+
+  /* Monospace for dollar amounts */
+  .font-amount {
+    font-family: "DM Mono", "JetBrains Mono", ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Tip preset button */
+  .btn-tip {
+    @apply min-h-touch min-w-touch
+      flex items-center justify-center
+      rounded-xl border-2 border-surface-200
+      bg-surface-100 px-4 py-3
+      text-base font-semibold text-surface-700
+      transition-all duration-150 ease-out
+      hover:bg-surface-200 hover:border-surface-300
+      active:scale-95;
+  }
+
+  .btn-tip-selected {
+    @apply border-brand-500 bg-brand-500 text-white
+      shadow-md
+      hover:bg-brand-600 hover:border-brand-600;
+  }
+
+  /* Input field */
+  .input-field {
+    @apply w-full h-12 px-4
+      rounded-xl border-2 border-surface-200
+      bg-white text-surface-900
+      text-lg font-medium
+      placeholder:text-surface-400
+      transition-colors duration-150
+      focus:border-brand-500 focus:ring-2 focus:ring-brand-200
+      focus:outline-none;
+  }
+
+  /* Results card */
+  .card-result {
+    @apply rounded-2xl bg-brand-50 border border-brand-200
+      p-6 shadow-result;
+  }
+
+  /* Main card container */
+  .card {
+    @apply rounded-3xl bg-white shadow-card p-6;
+  }
+}
