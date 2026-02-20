@@ -12,6 +12,7 @@ import SuccessBanner from "./components/SuccessBanner";
 import TermsOfService from "./components/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import StatusPage from "./components/StatusPage";
+import AnalyticsDashboard from "./components/AnalyticsDashboard";
 
 function HomePage() {
   const [billRaw, setBillRaw] = useState("");
@@ -297,6 +298,7 @@ export default function App() {
   if (path === "/terms") return <TermsOfService />;
   if (path === "/privacy") return <PrivacyPolicy />;
   if (path === "/status") return <StatusPage />;
+  if (path === "/analytics") return <AnalyticsDashboard />;
 
   return <HomePage />;
 }
